@@ -12,7 +12,8 @@ jobs:
           fingerprints:
             - "f1:98:91:1c:d9:7c:5e:52:3c:20:26:e0:1c:10:4b:4c"
 
-      - run: ssh ubuntu@52.221.186.212 'pwd | touch 2.log'
-      - run: echo "hello world"
+      - run: ssh ubuntu@52.221.186.212 ./deploy_warehouse_api_heroku.sh
+
+      - run: echo "Done!"
 
 
